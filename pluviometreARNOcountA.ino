@@ -22,14 +22,14 @@ void loop() {
         {
           for ( bascules ==0 ; countA<9 ; countA++) 
               {
-              Serial.print("la boulce for tourne countA=");
+              Serial.print("la boucle for tourne countA=");
               Serial.println(countA);
-              } 
+              } // fermeture du for
     countA=0 ;
     compteur ++ ;
      Serial.print("nombre de bascule =");
      Serial.println(compteur);
-              // fermertue du for
+              
         }  //fermeture du if
     
 
