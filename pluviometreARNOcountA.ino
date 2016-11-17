@@ -1,3 +1,4 @@
+// capteur branché entre D13 et GND
 int bascules ;
 int compteur ; 
 const int pinD13 = 13;
