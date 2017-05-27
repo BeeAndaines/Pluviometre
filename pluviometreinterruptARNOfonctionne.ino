@@ -3,6 +3,7 @@ int compteur ;
 const int pinD3 = 3;
 //attazhc interrupt ne fonctionne que sur le pin D2 ou D3
 int  temporisation;
+int pluie;
 
 void setup() {
   Serial.begin(9600);
@@ -23,8 +24,15 @@ void loop() {
     bascules = digitalRead(13);
     // ligne suivante pour verifier que le pluviometre bascule 
     Serial.print("compteur vaut  ");
-    delay (1000);
     Serial.println(compteur);
+    Serial.print("le cumul de pluie est de  : ");
+    pluie = compteur * 7 ; 
+    Serial.print(pluie);
+        Serial.println("mL ");
+
+    delay (1000);
+
+
 /* if (bascules ==0  )
         {
           Serial.println(compteur);
